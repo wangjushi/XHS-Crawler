@@ -1,0 +1,20 @@
+mysql:
+  host: localhost
+  port: 3306
+  user: root
+  password: root
+  database: xiaohongshu
+
+crawler:
+  keywords: "编程,学习"
+  max_notes_per_keyword: 5
+  max_comments_per_note: -1  # -1 代表获取全部评论
+  scroll_pause: 2.0
+  scroll_retry: 3
+  random_delay_min: 1.5
+  random_delay_max: 4.0
+  max_retries: 3
+  batch_sleep_after: 10
+  batch_sleep_sec: 300
+  user_agent_rotate: true
+  proxy: ""

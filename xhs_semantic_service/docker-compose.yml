@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  semantic-search:
+    build: .
+    container_name: semantic-search
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./vector_store.faiss:/app/vector_store.faiss
+      - ./id_map.npy:/app/id_map.npy
+    environment:
+      - MYSQL_HOST=localhost
+      - MYSQL_PORT=3306
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DB=xiaohongshu
+    restart: always

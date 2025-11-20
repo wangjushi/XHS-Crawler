@@ -1,0 +1,20 @@
+# Web automation
+playwright>=1.48.0
+
+# MySQL database support
+pymysql>=1.1.0
+
+# YAML configuration file support
+PyYAML>=6.0.2
+
+# JSON / Data utilities
+ujson>=5.10.0
+
+# Logging and terminal color (optional but nice)
+colorama>=0.4.6
+
+# Environment variable support
+python-dotenv>=1.0.1
+
+# Web scraping
+requests>=2.31.0
